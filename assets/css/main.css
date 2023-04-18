@@ -4687,3 +4687,12 @@ input, select, textarea {
 		}
 
 	}
+	.profile-pic {
+		display: block;
+		float: right;
+		margin-right: 1em;
+		width: 200px;
+		height: 200px;
+		border-radius: 70%;
+		object-fit: cover;
+	  }
