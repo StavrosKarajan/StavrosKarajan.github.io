@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Stavros PhD summary - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Style for the methodology section */
+			#methodology {
+				margin-bottom: 20px;
+			}
+			
+			/* Style for the unordered list */
+			#methodology ul {
+				list-style-type: disc; /* Use disc-style bullets */
+				padding-left: 20px;   /* Add left padding to indent bullets */
+			}
+			
+			/* Style for list items */
+			#methodology li {
+				margin: 10px 0;       /* Add space between list items */
+			}
+			
+			/* Style for strong text within list items (step titles) */
+			#methodology li strong {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Stavros</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Roles.html">Skills and Interests </a></li>
+							<li class="active"><a href="Blog.html">Blog</a></li>			
+						<!-- <li><a href="generic.html">Generic Page</a></li> -->
+						<li><a href="Publications.html">Publications</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://scholar.google.ch/citations?user=Tcam1KYAAAAJ&hl=en" class="icon brands alt fa-google"><span class="label">Google Scholar</span></a></li>
+							<li><a href="https://www.researchgate.net/profile/Stavros-Karagiannopoulos" target="_blank" class="icon brands alt fa-researchgate"><span class="label">researchgate</span></a></li>
+							<li><a href="https://www.linkedin.com/in/stavroskaragiannopoulos/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.facebook.com/stavroska.71" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/_stavros_0/" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<!-- <span class="date">April 25, 2022</span>-->
+									<h3> Gain Insights from your Documents using NLP </h3>
+										<p style="text-align: justify; width: 100%;">
+											In today's fast-paced world of Information Technology and Digital Transformation, we are spending a lot of time to create, organize, find and digest documents.
+											They can be extensive reports, manuals, meeting notes, technical documents, etc., and managing them can be time-consuming and challeging. 	
+											Fortunately, advancements in Natural Language Processing (NLP) have opened doors to a new era of efficiency and insight. 
+											In this article, we delve into the innovative methodology behind a document-analysis application 
+											that leverages the capabilities of NLP to transform your daily operations.
+										</p> 
+										<h3>Methodology</h3>
+										Without further adue, let's dive in the solution that is presented in the following Figure. 
+											<img src="inspiration_website\final\supervised.png" alt="" style="width:50%"/><figcaption> High level methodology.</figcaption>  </a>
+											<p style="text-align: justify; width: 100%;">	
+											
+											</p>
+											
+											<strong>Step 1: Data Collection</strong><br>
+											Begin with your raw documents that capture the relevant content of your organization.
+											<br>			
+											<strong>Step 2: Data Filtering and Cleaning</strong><br>
+											Streamline the data by removing unnecessary columns and document parts when not needed, identifying different formats like tables, different languages, and preprocessing data, ensuring a clean foundation for analysis.
+											<br>			
+											<strong>Step 3: Sentence Transformer Embeddings</strong><br>
+											Enter the realm of deep learning, where solution text is transformed into a high-dimensional space. Here, NLP truly flexes its muscles, converting text into numerical values represented by vectors that can be used
+											in mathematical calculations.
+											<br>			
+											<strong>Step 4: UMAP Dimension Reduction</strong><br>
+											Transition from the high-dimensional complexity to a concise five-dimensional space with UMAP's dimension reduction technique, simplifying the data while preserving its essence.
+											<br>			
+											<strong>Step 5: HDBSCAN Clustering</strong><br>
+											Embrace the versatility of HDBSCAN to cluster the contents into similar topics based on the reduced dimensions, offering insights without imposing specific structural assumptions on clusters.
+											<br>								
+											<strong>Step 6: Topic Labeling</strong><br>
+											Emerge from the data analysis with clear, representative names and words for each cluster, providing a meaningful context to the insights.
+											<br>												
+											<strong>Step 7: Cluster Enrichment and Elasticsearch</strong><br>
+											Enhance the data's depth by incorporating named entities, and store this enriched dataset in Elasticsearch, creating a robust database.
+											<br>			
+		
+											<h3>High-Level Magic of NLP Transformation</h3>
+											<p style="text-align: justify; width: 100%;">							
+											At the heart of our NLP-application lies the concept of Sentence Transformer Embeddings.
+											These remarkable tools have their roots in the field of deep learning, and convert text into multi-dimensional data vectors. 
+											Originally inspired by BERT (Bidirectional Encoder Representations from Transformers), these embeddings offer a significant new approach to textual data analysis. 
+											By representing text as numerical vectors, we unlock the ability to quantify and compare the subtle nuances hidden within our documents. 
+											This transformation provides a foundation for similarity search based on queries as well as clustering, enabling us to retrieve knowledge (information), group similar text together and reveal patterns that
+											would otherwise be difficult to extract manually. 
+							
+											
+											
+											
+											<h3>Illustrating Insights with Kibana</h3>
+											
+											Finally, we enter the world of business intelligence for advanced data visualization and exploration tools, like Kibana. 
+											This tool allows us to monitor and report the main findings of the NLP analysis using dynamic bars, charts, intuitive dashboards and other engaging formats.
+											This accessibility to data visualization enhances the clarity of our findings and their practical utility. Using Kibana dashboards our organization can spot trends, identify bottlenecks,
+											and make informed decisions in real time, ensuring that the value derived from the document analysis translates into actionable insights to improve efficiency and productivity.
+										
+										</p>	
+										<img src="inspiration_website\final\supervised.png" alt="" style="width:50%"/><figcaption> flowchart of data flow and focus on the cloud services.</figcaption>  </a>
+	
+
+										<h3>Conclusion</h3>
+										<p style="text-align: justify; width: 100%;">							
+											In conclusion, we've unraveled the remarkable journey of harnessing NLP's power for IT ticket analysis. By following this methodology, organizations can unlock valuable insights, streamline support operations, and enhance customer satisfaction. The future of IT support has arrived, and it's driven by the magic of NLP.
+										</p>								
+
+											
+
+								
+										<img src="inspiration_website\final\AIrobot.png" alt="Image made by DALL E 2 to show iot and devices connected, industry x"  style="width:50%"/> <figcaption> Image made by DALL E 2.</figcaption>  </a>
+
+	
+									<li><a href="Blog.html">Back</a></li>
+								</header>
+								<!--
+								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								-->	
+							</section>
+<!-- Posts -->
+							<section class="posts">
+																				
+							</section>
+
+
+
+					</div>
+				<!-- Footer -->
+	<!--
+						<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+-->	
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Stavros Karagiannopoulos 2022. All rights reserved</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
